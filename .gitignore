@@ -1,3 +1,4 @@
 buildozer.spec
 .idea/
 buildozer/
+venv/

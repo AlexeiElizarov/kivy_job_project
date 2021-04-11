@@ -1,0 +1,20 @@
+#:include mainmenu.kv
+#:include create_order.kv
+
+#:import NoTransition kivy.uix.screenmanager.NoTransition
+
+
+ScreenManager:
+    transition: NoTransition()
+    Screen:
+        name: 'main_screen'
+        BoxLayout:
+            orientation: "vertical"
+            Label:
+                text: 'Привет'
+            Button:
+                text: 'Начнем!'
+                on_press: app.root.current = 'mainmenu'
+
+    MainMenu:
+    CreateOrder:

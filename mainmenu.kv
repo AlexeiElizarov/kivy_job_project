@@ -1,0 +1,12 @@
+
+<MainMenu@Screen>:
+    name: 'mainmenu'
+    BoxLayout:
+        Button:
+            text: '1'
+        Button:
+            text: '2'
+            on_press: app.root.current = 'create_order'
+        Button:
+            text: 'Выход'
+            on_press: app.get_running_app().stop()
